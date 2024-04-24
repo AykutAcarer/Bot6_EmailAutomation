@@ -108,7 +108,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umab:ForEachEmailX DisplayName="For Each Email" sap:VirtualizedContainerService.HintSize="530,796" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Gmail.Folder(&quot;Inbox&quot;)]" NumberOfEmailsLimit="10" UnreadOnly="True" WithAttachmentsOnly="False">
+            <umab:ForEachEmailX DisplayName="For Each Email" sap:VirtualizedContainerService.HintSize="530,796" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Gmail.Folder(&quot;Inbox&quot;)]" NumberOfEmailsLimit="10" UnreadOnly="False" WithAttachmentsOnly="False">
               <umab:ForEachEmailX.Body>
                 <ActivityAction x:TypeArguments="snm:MailMessage, x:Int32">
                   <ActivityAction.Argument1>
@@ -150,7 +150,7 @@
                 <umabf:MailFilterArgument LogicalOperator="And">
                   <umabf:MailFilterArgument.Filters>
                     <scg:List x:TypeArguments="umabf:SingleMailFilterArgument" Capacity="1">
-                      <umabf:SingleMailFilterArgument DateEqualsFilter="{x:Null}" Criteria="Subject" DateFilter="SevenDays" Operator="Contains" Value="Dummy" />
+                      <umabf:SingleMailFilterArgument DateEqualsFilter="{x:Null}" Criteria="Subject" DateFilter="SevenDays" Operator="Contains" Value="Read" />
                     </scg:List>
                   </umabf:MailFilterArgument.Filters>
                 </umabf:MailFilterArgument>
