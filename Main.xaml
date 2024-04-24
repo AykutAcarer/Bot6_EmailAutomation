@@ -415,7 +415,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </umab:ForEachEmailX>
-            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[String.Format(EmailBodyText,datetime.Now.toString,st_OutputReport)]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="530,433" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Email Output Summary" To="aacarer1@gmail.com" UseDocumentAsBody="False">
+            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[String.Format(EmailBodyText,datetime.Now.toString,st_OutputReport)]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="530,433" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Email Output Summary" To=".................@gmail.com" UseDocumentAsBody="False">
               <umab:SendMailX.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                   <InArgument x:TypeArguments="x:String">SavedAttachments\5stars.jpg</InArgument>
